@@ -1,0 +1,41 @@
+.basicinput {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px;
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 0.3px solid #00E6F6;;
+}
+
+input::placeholder{
+    font-size: 15px;
+    color: #fff;
+}
+
+.input__large {
+    width: 35vw;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #fff !important;
+}
+
+.input__small {
+    width: 20vw;
+    font-size: 14px;
+    padding: 0 10px;
+    color: #fff !important;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}

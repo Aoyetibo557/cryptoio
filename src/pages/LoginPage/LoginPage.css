@@ -1,0 +1,88 @@
+.loginpage {
+   
+}
+
+.loginpage__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.login__top h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.login__top p {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.login__link {
+    color: #00E6F6;
+    font-weight: 400;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.link__left{
+    margin-left: 28vw;
+}
+
+.login__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login__bottom p {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.login__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 220px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    background-color: #00E6F6;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.login__btn-active {
+    opacity: 1;
+}

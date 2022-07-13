@@ -1,0 +1,43 @@
+
+
+.register__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.register__top h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.register__top p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.register__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.register__form div {
+    display: flex;
+}
