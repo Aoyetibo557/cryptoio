@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import "./Header.css";
 import HeaderLogo from "../../assets/nobgLogo.png";
 import { Link } from "react-router-dom";
+import Button from '../button/Button';
 
 
 function Header() {
@@ -32,7 +33,11 @@ function Header() {
 
             <div>
               <Link to='/onboarding/login' className='header__nav-link'>Login</Link>
-              <button className='header__btn'>Get started</button>
+              <Button 
+                url='/onboarding/login'
+                label='Get Started'
+                color='primary'
+              />
             </div>
           </nav>
         ):(

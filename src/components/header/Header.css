@@ -5,12 +5,14 @@
     background: #082A3A;
     box-shadow:  -20px 20px 60px #072431,
              20px -20px 60px #093043;
-
+    position: sticky;
+    top: 0;
+    z-index: 1;
           
 }
 
 .header__logo {
-    width: 20vw;
+    width: 350px;
     height: 100px;
     object-fit: cover;
 }
