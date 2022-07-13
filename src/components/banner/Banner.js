@@ -20,7 +20,7 @@ function Banner() {
 
                <Button 
                 url='/onboarding/login'
-                label='Get Started'
+                label='Get Started &rarr;'
                 color='primary'
                />
             </div>

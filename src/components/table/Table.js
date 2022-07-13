@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Button from '../button/Button';
 import BasicSparklines from '../sparklines/BasicSparklines';
 import './Table.css';
+import {Link} from 'react-router-dom';
 
 
 const API_KEY = `${process.env.REACT_APP_RAPIDAPI_KEY}`;
@@ -62,7 +63,7 @@ function Table() {
                             <span className='coin__td-symbol'>{coin.symbol}</span>
                         </td>
                         <td>${convertPrice(coin?.price)}</td>
-                        <td className={coin.change > 0.0 ? 'coin__td-change-positive' : "coin__td-change-negative" }>{coin.change}%</td>
+                        <td className={coin.change >= 0.0 ? 'coin__td-change-positive' : "coin__td-change-negative" }>{coin.change}%</td>
                         <td className='coin__td-spark'> 
                             <BasicSparklines 
                                 data={coin.sparkline}
@@ -85,6 +86,9 @@ function Table() {
                     </tr>
                 )).slice(0, 7)}
             </table>
+            <div className='table__link__container'>
+                <Link to='/markets'>Explore all other available assets &rarr;</Link>
+            </div>
 
 
             

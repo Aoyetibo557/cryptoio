@@ -107,7 +107,7 @@ function BodyBanner() {
                 </div>
 
                 <Button 
-                    label={'Get started'}
+                    label='Get started &rarr;'
                     url='/onboarding/login'
                     color="primary"
                 />

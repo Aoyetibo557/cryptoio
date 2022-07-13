@@ -4,6 +4,7 @@ import Banner from '../../components/banner/Banner'
 import Header from '../../components/header/Header'
 import Table from '../../components/table/Table'
 import BodyBanner from '../../components/bodybanner/BodyBanner';
+import Footer from '../../components/footer/Footer';
 
 function HomePage() {
   return (
@@ -12,10 +13,8 @@ function HomePage() {
         <div className='homepage__content'>
             <Banner />
             <Table />
-
-            <div>
-                <BodyBanner />
-            </div>
+            <BodyBanner />
+            <Footer />
         </div>
     </div>
   )
