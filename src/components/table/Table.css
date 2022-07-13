@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     max-width: 100%;
     margin-bottom: 1rem;
@@ -13,16 +14,67 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    overflow: hidden;
 }
+
 
 table {
     width: 80%;
     border-radius: 10px;
     background-color: whitesmoke;
     text-align: left;
-    padding: 20px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 8px;
 }
 
+table th {
+    height: 50px;
+    opacity: 0.5;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+tr {
+    height: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid #ddd;
+}
+
+.coin__td {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.coin__td-name{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.coin__td-symbol {
+    font-weight: 500;
+    opacity: 0.4;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.coin__td-change-positive {
+    color: #000;
+}
+
+.coin__td-change-negative {
+    color: #ff0000;
+
+}
+
+.coin__td-spark {
+    width: 125px;
+}
 .table__image {
     width: 30px;
     height: 30px;

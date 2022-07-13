@@ -3,6 +3,7 @@ import "./HomePage.css"
 import Banner from '../../components/banner/Banner'
 import Header from '../../components/header/Header'
 import Table from '../../components/table/Table'
+import BodyBanner from '../../components/bodybanner/BodyBanner';
 
 function HomePage() {
   return (
@@ -13,7 +14,7 @@ function HomePage() {
             <Table />
 
             <div>
-                <Banner />
+                <BodyBanner />
             </div>
         </div>
     </div>

@@ -1,6 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import Button from '../button/Button';
+import BasicSparklines from '../sparklines/BasicSparklines';
 import './Table.css';
+
+
+const API_KEY = `${process.env.REACT_APP_RAPIDAPI_KEY}`;
 
 function Table() {
 
@@ -8,9 +12,12 @@ function Table() {
 
     useEffect(() => {
         getCoins();
+        console.log(API_KEY);
     }, []);
 
-
+    const convertPrice = (price) => {
+        return Number.parseFloat(price).toFixed(2);
+    }
 
     const getCoins = async () => {
 
@@ -21,7 +28,7 @@ function Table() {
         const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'e7dc8eac4dmsh92a9da89ed892e9p1991a2jsn19497b2325c0',
+            'X-RapidAPI-Key': API_KEY,
             'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
         }
         };
@@ -38,32 +45,47 @@ function Table() {
     <div className='table'>
        <div className='table__content'>
             <table className='table__board'>
-                <thead>
+                <tr>
                     <th>Assets</th>
                     <th>Price</th>
                     <th>24h change</th>
-                </thead>
-                <tbody>
-                    {data.map(coin => (
-                        <tr key={coin.uuid}>
-                            <td>
+                </tr>
+                {data.map(coin => (
+                    <tr key={coin.uuid}>
+                        <td className='coin__td'>
+                            <span >
                                 <img className='table__image' src={coin.iconUrl} alt={coin.name} />
-                                {coin.name}
-                            </td>
-                            <td>{coin.price}</td>
-                            <td>{coin.change}%</td>
-                            <td>
-                                <Button 
-                                    text='Buy'
-                                    url="/"
-                                    label='Buy'
-                                    color="secondary"
-                                />
-                            </td>
-                        </tr>
-                    )).slice(0, 7)}
-                </tbody>
+                            </span>
+
+                            <span className='coin__td-name'>{coin.name}</span>
+
+                            <span className='coin__td-symbol'>{coin.symbol}</span>
+                        </td>
+                        <td>${convertPrice(coin?.price)}</td>
+                        <td className={coin.change > 0.0 ? 'coin__td-change-positive' : "coin__td-change-negative" }>{coin.change}%</td>
+                        <td className='coin__td-spark'> 
+                            <BasicSparklines 
+                                data={coin.sparkline}
+                                limit={0}
+                                width={100}
+                                height={30}
+                                margin={0}
+                                color={coin.color}
+                            />
+                        </td>
+                        
+                        <td>
+                            <Button 
+                                text='Buy'
+                                url="/"
+                                label='Buy'
+                                color="secondary"
+                            />
+                        </td>
+                    </tr>
+                )).slice(0, 7)}
             </table>
+
 
             
        </div>
