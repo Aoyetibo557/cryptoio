@@ -1,11 +1,11 @@
 import React from 'react';
 import BasicSparklines from '../sparklines/BasicSparklines';
 import './Card.css';
-
+import {Link} from 'react-router-dom'; 
 
 function Card({uuid, size, name, iconUrl, price, btcPrice,symbol, sparklines, change, color, orientation}) {
   return (
-    <div key={uuid} className={`card card-${size} card-${orientation}`}>
+    <Link to={`/markets/${name}`} key={uuid} className={`card card-${size} card-${orientation}`}>
         <div className='card__header'>
             <h3 className='card__name'>{name}</h3>
             <img className='card__image' src={iconUrl} alt={name} />
@@ -24,7 +24,7 @@ function Card({uuid, size, name, iconUrl, price, btcPrice,symbol, sparklines, ch
 
             />
         </div>
-    </div>
+    </Link>
   )
 }
 

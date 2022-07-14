@@ -3,6 +3,7 @@ import "./MarketPage.css";
 import Header from '../../components/header/Header'
 import MarketComp from '../../components/markets/MarketComp'
 import MarketTable from '../../components/markets/MarketTable';
+import Footer from '../../components/footer/Footer';
 
 function MarketPage() {
   return (
@@ -15,6 +16,8 @@ function MarketPage() {
           <MarketTable />
         </div>
       </div>
+
+      <Footer />
     </div>
   )
 }

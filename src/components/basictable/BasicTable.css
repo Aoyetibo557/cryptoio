@@ -1,0 +1,42 @@
+.basictable {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px;
+    justify-content: center;
+   
+}
+
+.basictable__div {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.basictable__div p {
+    display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.coin__p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.coin__p span {
+    margin-left: 10px;
+}
+
+.coin__p-symbol {
+    font-weight:400;
+    opacity: 0.4;
+}
+
+.coin__p-marketcap {
+    font-weight:400;
+    text-align: left;
+}

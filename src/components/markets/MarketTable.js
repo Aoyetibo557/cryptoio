@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { getCoins } from '../../utils/getters';
+import BasicTable from '../basictable/BasicTable';
 
 function MarketTable() {
     const [filteredData, setFilteredData] = useState([]);
@@ -17,23 +18,28 @@ function MarketTable() {
     }
 
   return (
-    <div>
-        <div>
-            {["All", 'crypto', 'fiat'].map(type => {
-                return <button key={type} onClick={handleCoinData} value={type}>{type}</button>
+    <div className='markettable'>
+        <div className='markettable__filter-btns'>
+            {["All", 'crypto', "Gaming", "NFT", 'fiat'].map(type => {
+                return <button className='filter__btn' key={type} onClick={handleCoinData} value={type}>{type}</button>
             })}
         </div>
 
-        {filteredData && filteredData.map(coin => (
-            <div key={coin.uuid}>
-                <p>{coin.name}</p>
-                <p>{coin.symbol}</p>
-                <p>{coin.price}</p>
-                <p>{coin.change}</p>
-                <p>{coin.marketCap}</p>
-                <p>{coin.type}</p>
-            </div>
-        ))}
+
+
+        <div className='markettable__content'>
+            {filteredData && filteredData.map(coin => (
+                <BasicTable key={coin.uuid} 
+                    uuid={coin.uuid}
+                    name={coin.name}
+                    iconUrl={coin.iconUrl}
+                    symbol={coin.symbol}
+                    marketCap={coin.marketCap}
+                    price={coin.price}
+                    change={coin.change}
+            />
+            ))}
+        </div>
     </div>
   )
 }

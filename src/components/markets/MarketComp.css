@@ -27,3 +27,46 @@
     margin-right: 30px;
 
 }
+
+/* Market table styles */
+.markettable {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.markettable__filter-btns {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.filter__btn{
+    padding: 5px;
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* background-color: #00E6F6; */
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.filter__btn:hover {
+    opacity: 1;
+}
+
+.markettable__content {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
