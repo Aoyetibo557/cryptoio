@@ -25,10 +25,23 @@
     flex-direction: row;
     align-items: center;
     font-size: 1.1rem;
+    
+}
+
+.coin__p a{
+    color: #000;
+    text-decoration: none;
+}
+
+.coin__p a:hover{
+    color: #000;
+    transform: scale(1.02);
+    color: #1F6CAB;
 }
 
 .coin__p span {
     margin-left: 10px;
+    text-decoration:none;
 }
 
 .coin__p-symbol {

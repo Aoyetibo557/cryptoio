@@ -1,0 +1,41 @@
+.coinchart {
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    justify-content: space-between;
+    background-color: #0f3749;
+    border-radius: 2px;
+    width: 60vw;
+    height:70vh;
+}
+
+.coinchart__top {
+    display: flex;
+    flex-direction: column;
+}
+
+.coinchart__top h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    animation: blink 1s forwards ease-in;  
+}
+
+.coinchart__top p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #00E6F6;
+    animation: blink 1s forwards ease-in;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}

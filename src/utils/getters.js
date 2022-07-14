@@ -34,7 +34,7 @@ const getCoins = async () => {
     return await fetch(url, options)
         .then(res => res.json())
         .then(json => {
-            console.log(json.data.coins);
+            // console.log(json.data.coins);
             return json.data.coins
         })
         .catch(err => console.error('error:' + err));
@@ -71,5 +71,25 @@ const getHighestMarketCap = (data) => {
     return highestMarketCap
 }
 
+const getSingleCoin = async (uuid) => {
+    const url = `https://coinranking1.p.rapidapi.com/coin/${uuid}?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h`;
 
-export { getMarkets, getCoins, getBestCoin, getWorstCoin, getLastCoin, getHighestMarketCap };
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'e7dc8eac4dmsh92a9da89ed892e9p1991a2jsn19497b2325c0',
+            'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
+        }
+    };
+
+    return await fetch(url, options)
+        .then(res => res.json())
+        .then(json => {
+            console.log(json.data.coin);
+            return json.data.coin
+        })
+        .catch(err => console.error('error:' + err));
+}
+
+
+export { getMarkets, getCoins, getBestCoin, getWorstCoin, getLastCoin, getHighestMarketCap, getSingleCoin };

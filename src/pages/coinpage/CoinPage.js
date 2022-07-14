@@ -5,12 +5,12 @@ import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
 
 function CoinPage() {
-    const {coinName} = useParams();
+    const {coinName, uuid} = useParams();
   return (
     <div>
         <Header />
         <div>
-            <CoinDetails coinName={coinName} />
+            <CoinDetails coinName={coinName} uuid={uuid} />
         </div>
         <Footer />
     </div>

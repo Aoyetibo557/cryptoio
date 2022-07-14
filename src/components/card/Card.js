@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 function Card({uuid, size, name, iconUrl, price, btcPrice,symbol, sparklines, change, color, orientation}) {
   return (
-    <Link to={`/markets/${name}`} key={uuid} className={`card card-${size} card-${orientation}`}>
+    <Link to={`/markets/${name}/${uuid}`} key={uuid} className={`card card-${size} card-${orientation}`}>
         <div className='card__header'>
             <h3 className='card__name'>{name}</h3>
             <img className='card__image' src={iconUrl} alt={name} />

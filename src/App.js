@@ -15,7 +15,7 @@ function App() {
           <Route path="/onboarding/login" element={<LoginPage />} />
           <Route path="/onboarding/register" element={<RegisterPage />} />
           <Route path="/markets" element={<MarketPage />} />
-          <Route path="/markets/:coinName" element={<CoinPage />} />
+          <Route path="/markets/:coinName/:uuid" element={<CoinPage />} />
 
         </Routes>
       </Router>

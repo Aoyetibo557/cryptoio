@@ -72,3 +72,43 @@
     font-size: 13px;
 
 }
+
+/* Login Card Styles */
+
+.loginCard{
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    height: 40vh;
+    background-color: #0f3749;
+    border-radius: 2px;
+}
+
+
+.loginCard__tab {
+    width: 50%;
+    background-color: #0f3749;
+    color: #FFFFFF !important;
+}
+
+.loginCard__tabpanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.loginCard____tabpanel__h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.loginCard____tabpanel__link{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    color: #00E6F6;
+}
