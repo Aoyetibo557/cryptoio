@@ -42,10 +42,11 @@
 .header__nav-link {
     /* margin: 0 100px; */
     text-decoration: none;
-    color: #00E6F6;
+    /* color: #00E6F6; */
+    color: #FFFFFF;
     font-size: 1rem;
     font-weight: 500;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: all 0.3s ease-in-out;
 }
 

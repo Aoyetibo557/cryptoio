@@ -3,45 +3,25 @@ import Button from '../button/Button';
 import BasicSparklines from '../sparklines/BasicSparklines';
 import './Table.css';
 import {Link} from 'react-router-dom';
-
-
-const API_KEY = `${process.env.REACT_APP_RAPIDAPI_KEY}`;
+import {getCoins} from '../../utils/getters';
 
 function Table() {
 
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        getCoins();
-        console.log(API_KEY);
+        getCoins().then(data => {
+            setData(data);
+        }).catch(err => console.error(err));
     }, []);
 
+   
     const convertPrice = (price) => {
         return Number.parseFloat(price).toFixed(2);
     }
 
-    const getCoins = async () => {
 
-        const fetch = require('node-fetch');
 
-        const url = 'https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h&tiers%5B0%5D=1&orderBy=marketCap&orderDirection=desc&limit=50&offset=0';
-
-        const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': API_KEY,
-            'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
-        }
-        };
-
-        fetch(url, options)
-            .then(res => res.json())
-            .then(json => {
-                console.log(json.data.coins)
-                setData(json.data.coins)
-            })
-            .catch(err => console.error('error:' + err));
-    }
   return (
     <div className='table'>
        <div className='table__content'>
@@ -51,7 +31,7 @@ function Table() {
                     <th>Price</th>
                     <th>24h change</th>
                 </tr>
-                {data.map(coin => (
+                {data?.map(coin => (
                     <tr key={coin.uuid}>
                         <td className='coin__td'>
                             <span >
@@ -98,13 +78,3 @@ function Table() {
 }
 
 export default Table
-
-
-
-
-    // const getCoins = async () => {
-    //     const response = await fetch('https://api.coingecko.com/api/v3/coins/list');
-    //     const data = await response.json();
-    //     console.log(data);
-    //     setData(data);
-    // }

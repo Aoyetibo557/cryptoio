@@ -1,0 +1,28 @@
+.marketpage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.market__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.market__content-h3{
+    font-size: 1.9rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.market__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
