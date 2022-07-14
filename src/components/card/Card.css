@@ -80,8 +80,10 @@
     flex-direction: column;
     width: 24vw;
     height: 40vh;
+    padding: 10px;
     background-color: #0f3749;
     border-radius: 2px;
+    margin-bottom: 30px;
 }
 
 
@@ -111,4 +113,65 @@
     color: #FFFFFF;
     text-decoration: none;
     color: #00E6F6;
+}
+
+/* Coin Card */
+
+.coinCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 24vw;
+    height: 70px;
+    border-bottom: 0.4px solid #00E6F6;
+    background-color: #0f3749;
+}
+
+.coinCard__left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #0f3749;
+    color: #FFFFFF;
+}
+
+.coinCard__image {
+    width: 2vw;
+    height: 2vw;
+    object-fit: contain;
+}
+
+.coinCard__left a {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.coinCard__left a:hover {
+    transform: scale(1.05);
+}
+
+.coinCard__left-symbol {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.coinCard__right p{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.coinCard__right-change {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 0.6;
 }

@@ -9,7 +9,9 @@ function CoinChart({coin}) {
   return (
     <div className="coinchart" >
         <div className='coinchart__top'>
-            <h3>${Number.parseFloat(coin?.price)} </h3>
+          {/* if the price is over 10000 add a comma */}
+            <h3>${coin.price > 10000 ? Number.parseFloat(coin.price).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",") : Number.parseFloat(coin.price).toFixed(2)} </h3>
+            {/* <h3>${Number.parseFloat(coin?.price).toFixed(2)} </h3> */}
             <p>
                 <span> {coin?.change >= 0 ? `+${coin?.change}%` : `${coin?.change}%`} </span>
                 <span>Today</span>

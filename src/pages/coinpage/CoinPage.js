@@ -10,7 +10,7 @@ function CoinPage() {
     <div>
         <Header />
         <div>
-            <CoinDetails coinName={coinName} uuid={uuid} />
+          <CoinDetails coinName={coinName} uuid={uuid} />
         </div>
         <Footer />
     </div>

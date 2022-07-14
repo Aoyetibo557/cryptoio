@@ -1,3 +1,4 @@
+
 .coindetails {
     display: flex;
     flex-direction: column;
@@ -59,4 +60,23 @@
     font-weight: 400;
     margin-bottom: 10px;
     color: #FFFFFF;
+}
+
+.coindetails__content__topdiv-assets{
+    height: 70vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #0f3749;
+    padding: 10px;
+    
+}
+
+.coindetails__content__topdiv-assets h3 {
+    color: #00e6f6;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.coindetails__content__topdiv-assets::-webkit-scrollbar{
+    overflow: hidden;
 }
