@@ -61,7 +61,7 @@ function Table() {
                             <td>
                                 <Button 
                                     text='Buy'
-                                    url="/"
+                                    url="/onboarding/login"
                                     label='Buy'
                                     color="secondary"
                                 />

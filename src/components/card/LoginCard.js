@@ -66,18 +66,16 @@ function LoginCard({coinSymbol}) {
             </Box>
 
             <TabPanel  value={value} index={0}>
-                <h4 className='loginCard____tabpanel__h4'>Ready to buy {coinSymbol} ?</h4>
+                Ready to buy {coinSymbol} ?
                 <Button color='primary' label="Create Account" url={"/onboarding/login"}  />
-                <p>
-                    or <Link className='loginCard____tabpanel__link' to="/onboarding/login"> Log in </Link>
-                </p>
+                or 
+                <Link className='loginCard____tabpanel__link' to="/onboarding/login"> Log in </Link>
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <h4 className='loginCard____tabpanel__h4'>Ready to buy {coinSymbol} ?</h4>
+                Ready to buy {coinSymbol} ?
                 <Button color='primary' label="Create Account" url={"/onboarding/login"}  />
-                <p>
-                    or <Link className='loginCard____tabpanel__link' to="/onboarding/login"> Log in </Link>
-                </p>
+                or 
+                <Link className='loginCard____tabpanel__link' to="/onboarding/login"> Log in </Link>
             </TabPanel>
             
         </Box>

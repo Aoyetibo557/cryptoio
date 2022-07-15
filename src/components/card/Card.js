@@ -21,7 +21,8 @@ function Card({uuid, size, name, iconUrl, price, btcPrice,symbol, sparklines, ch
                 color={color}
                 margin={10}
                 limit={25}
-
+                isBars={false}
+                isSpots={true}
             />
         </div>
     </Link>

@@ -5,13 +5,13 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    /* background-color: #fff; */
+    margin-bottom: 100px;
 }
 
 .coindetails__container{
     display: flex;
     flex-direction: column;
-    width:90%;
+    width: 90%;
     height: 100%;
 }
 .coindetails__link {
@@ -36,39 +36,38 @@
     object-fit: contain;
 }
 
-.coindetails__content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-}
-
-.coindetails__content__topdiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-}
-
 .coindetails__content__coinname {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1.7rem;
-    font-weight: 400;
     margin-bottom: 10px;
-    color: #FFFFFF;
 }
 
-.coindetails__content__topdiv-assets{
-    height: 70vh;
+.coindetails__content__coinname p{
+    color: #00e6f6;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.coindetails__content__coinname span{
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.coindetails__content__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100%;
+}
+
+.coindetails__content__topdiv-assets {
+    height: 65vh;
     overflow: hidden;
     overflow-y: scroll;
     background-color: #0f3749;
     padding: 10px;
-    
+    position: absolute;
 }
 
 .coindetails__content__topdiv-assets h3 {
@@ -79,4 +78,140 @@
 
 .coindetails__content__topdiv-assets::-webkit-scrollbar{
     overflow: hidden;
+}
+
+.coindetails__content__bottomdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    position: relative;
+    top: 30px;
+}
+
+
+.coindetails__content__bottomdiv-descp {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #0f3749;
+}
+
+.coindetails__content__bottomdiv-descp div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    position: sticky;
+    top: -10px;
+    z-index: 1;
+    background-color: #0f3749;
+}
+
+.coindetails__content__bottomdiv-descp-img {
+    width: 35px;
+    height: 35px;
+    object-fit:  contain;
+}
+
+.coindetails__content__bottomdiv-descp-logo {
+    width: 200px;
+    height: 50px;
+    object-fit:  cover;
+    position: relative;
+    /* left: 100px; */
+}
+
+.coindetails__content__bottomdiv-descp::-webkit-scrollbar{
+    overflow: hidden;
+}
+
+.coindetails__content__bottomdiv-descp h3 {
+    font-size: 1.4rem;
+    color: #00e6f6;
+    font-weight: 400;
+    margin-left: 10px ;
+}
+
+.coindetails__content__bottomdiv-descp p {
+    font-size: 15px;
+    word-spacing: 1px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.coindetails__content__bottomdiv-descp span{
+    font-size: 16px;
+    margin-left: 5px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-weight: 600;
+}
+
+.coindetails__content__bottomdiv-stats {
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0f3749;
+}
+
+.coindetails__content__bottomdiv-stats>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coindetails__content__bottomdiv-stats>div h3 {
+    font-size: 1.4rem;
+    color: #00e6f6;
+    font-weight: 400;
+}
+
+.coindetails__content__bottomdiv-stats-item {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.coindetails__content__bottomdiv-stats-item div h4 {
+    font-size: 16px;
+    color: #00e6f6;
+    font-weight: 400;
+}
+
+.coindetails__content__bottomdiv-stats-item div p {
+    font-size: 15px;
+    word-spacing: 1px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.coindetails__content__bottomdiv-stats-item div h4 span{
+    font-size: 13px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-weight: 400;
+}
+.coindetails__content__bottomdiv-stats-item div a{
+    color: #FFFFFF;
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.coindetails__content__bottomdiv-stats-item div a:hover {
+    color: #00e6f6;
 }

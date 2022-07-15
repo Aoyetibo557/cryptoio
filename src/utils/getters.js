@@ -77,7 +77,7 @@ const getSingleCoin = async (uuid) => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'e7dc8eac4dmsh92a9da89ed892e9p1991a2jsn19497b2325c0',
+            'X-RapidAPI-Key': API_KEY,
             'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
         }
     };
@@ -85,7 +85,7 @@ const getSingleCoin = async (uuid) => {
     return await fetch(url, options)
         .then(res => res.json())
         .then(json => {
-            console.log(json.data.coin);
+            // console.log(json.data.coin);
             return json.data.coin
         })
         .catch(err => console.error('error:' + err));

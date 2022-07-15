@@ -17,7 +17,7 @@ function CoinChart({coin}) {
                 <span>Today</span>
             </p>
         </div>
-        <BasicSparklines limit={25} height={150} data={coin.sparkline} color={coin.color} />
+        <BasicSparklines limit={25} height={150} data={coin.sparkline} isBars={false} isSpots={true} color={coin.color} />
     </div>
   )
 }
