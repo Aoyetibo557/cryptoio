@@ -6,8 +6,13 @@ import AppStoreImage from "../../assets/applestore.svg";
 import Interface from '../../assets/interface.svg';
 import SecureImage from "../../assets/securetransfers.svg";
 import ExchangeImage from "../../assets/exchange.svg";
+import InstallImage from "../../assets/install.png";
+import EncryptedImage from "../../assets/encrypted.png";
+import ClipboardImage from "../../assets/clipboard.png";
 import Header from '../../components/header/Header'
 import { Link } from 'react-router-dom';
+import Footer from '../../components/footer/Footer';
+import Button from '../../components/button/Button';
 
 
 
@@ -48,11 +53,11 @@ function MobileappPage() {
                             </p>
                         </div>
 
-                        <img src={Interface} alt="finalcial data" className='mobileappPage__smallimage'/>
+                        <img src={Interface} alt="finalcial data" className='mobileappPage__smallimage backdrop'/>
                     </div>
 
                     <div className='mobileappPage__topbody__box'>
-                        <img src={ExchangeImage} alt="finalcial data" className='mobileappPage__smallimage'/>
+                        <img src={ExchangeImage} alt="finalcial data" className='mobileappPage__smallimage backdrop'/>
 
                         <div>
                             <h3> Pocket-sized exchange</h3>
@@ -66,18 +71,47 @@ function MobileappPage() {
 
                     <div className='mobileappPage__topbody__box'>
                         <div>
-                            <h3>Secure crypto transferse</h3>
+                            <h3>Secure crypto transfers</h3>
                             <hr />
                             <p>
                                 Send and receive crypto straight from your Bitstamp account. Get the convenience of a mobile wallet combined with the security of our advanced crypto storage system.
                             </p>
                         </div>
 
-                        <img src={SecureImage} alt="finalcial data" className='mobileappPage__smallimage'/>
+                        <img src={SecureImage} alt="finalcial data" className='mobileappPage__smallimage backdrop'/>
                     </div>
                 </div>
+
+                <div className='mobileappPage__bottombody'>
+                    <h3>Getting Started</h3>
+                    <div className='mobileappPage__bottombody__content'>
+                        <div className='mobileappPage__bottombody__box'>
+                            <img src={InstallImage} alt="finalcial data" className='mobileappPage__icon'/>
+                            <h4>1. Get the app</h4>
+                            <p>Download the Cryptoio app from Google Play or the App Store.</p>
+                        </div>
+
+                        <div className='mobileappPage__bottombody__box'>
+                            <img src={ClipboardImage} alt="finalcial data" className='mobileappPage__icon'/>
+                            <h4>2. Set up your account</h4>
+                            <p>Download the Cryptoio app from Google Play or the App Store.</p>
+                        </div>
+
+                        <div className='mobileappPage__bottombody__box'>
+                            <img src={EncryptedImage} alt="finalcial data" className='mobileappPage__icon'/>
+                            <h4>3. Activate your device</h4>
+                            <p>Download the Cryptoio app from Google Play or the App Store.</p>
+                        </div>
+                    </div>
+
+                    <Button color="primary" url="/onboarding/login" label="Get started" />
+                </div>
             </section>
+
+           
         </div>
+
+         <Footer />
     </div>
   )
 }

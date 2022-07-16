@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './NotFound.css';
 import Header from '../header/Header'
 
 function NotFound() {
@@ -6,8 +7,9 @@ function NotFound() {
     <div>
         <Header />
         <div>
-            <h1>404</h1>
-            <h2>Page not found</h2>
+            <h2>Oops</h2>
+            <h4>Something Went Wrong</h4>
+            <p>Error 404 Page Not Found</p>
             
         </div>
     </div>
