@@ -1,0 +1,70 @@
+
+.notfound {
+
+}
+.notfound__content{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.notfound__image {
+    width:45vw;
+    height:550px;
+    object-fit: contain;
+}
+
+.notfound__right{
+    width:40vw;
+}
+
+.notfound__right h5 {
+    background-color: #00e6f67e;
+    width: 130px;
+    text-align: center;
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 999px;
+}
+
+.notfound__right h2 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.notfound__right h4 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #00e6f6;
+    opacity: 0.6;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.notfound__right div {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notfound__link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.notfound__link:hover{
+    color: #00e6f6;
+    text-decoration: underline;
+}
