@@ -21,17 +21,16 @@ function Header() {
         <Link to='/'>
             <img src={HeaderLogo} alt="logo" className='header__logo'/>
         </Link>
-        {urlPath === "home" ? (
+        {/* {urlPath === "home" ? ( */}
           <nav className='header__nav-home'>
-            <div>
+            <div className='header__nav-div'>
               <Link to='/' className='header__nav-link'>Home</Link>
-              <Link to='/' className='header__nav-link'>Mobile app</Link>
+              <Link to='/mobile-app' className='header__nav-link'>Mobile app</Link>
               <Link to='/markets' className='header__nav-link'>Markets</Link>
               <Link to='/' className='header__nav-link'>Blogs</Link>
-              <Link to='/' className='header__nav-link'>Tradeview</Link>
             </div>
 
-            <div>
+            <div className='header__nav-div-right'>
               <Link to='/onboarding/login' className='header__nav-link'>Login</Link>
               <Button 
                 url='/onboarding/login'
@@ -40,16 +39,16 @@ function Header() {
               />
             </div>
           </nav>
-        ):(
-          <nav className='header__nav'>
+        {/* ):( */}
+          {/* <nav className='header__nav'>
               {urlPath === "register" ? (
                 <Link to='/onboarding/login' className='header__nav-link'>Login</Link>
               ):(
                 <Link to='/onboarding/register' className='header__nav-link'>Register</Link>
               )}
 
-          </nav>
-        )}
+          </nav> */}
+        {/* )} */}
     </header>
   )
 }

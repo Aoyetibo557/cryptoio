@@ -1,0 +1,94 @@
+.mobileappPage {
+}
+
+.mobileappPage__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobileappPage__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 70vw;
+    height: 80vh;
+}
+
+.mobileappPage__top-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.mobileappPage__top-left h3 {
+    font-size: 3.8rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.mobileappPage__top-left p {
+    font-size: 1.8rem;
+    color: #00e6f6;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.mobileappPage__smallimage {
+    width:200px;
+    height:200px;
+    object-fit: contain;
+}
+
+.mobileappPage__section {
+    width: 100%;
+}
+
+.mobileappPage__topbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.mobileappPage__topbody__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mobileappPage__topbody__box div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 350px;
+}
+
+.mobileappPage__topbody__box div h3 {
+    font-size: 2.7rem;
+    color: #082A3A;
+    font-weight: 600;
+}
+
+.mobileappPage__topbody__box div hr{
+    width: 40%;
+    height: 0.1px;
+    background-color: rgba(0, 0, 0, 0.107);
+}
+
+.mobileappPage__topbody__box div p {
+    font-size: 1.2rem;
+    color: #082A3A;
+    font-weight: 300;
+}
