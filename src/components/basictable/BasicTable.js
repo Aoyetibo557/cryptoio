@@ -3,7 +3,9 @@ import "./BasicTable.css";
 import Button from '../button/Button'
 import { Link } from 'react-router-dom';
 
+
 function BasicTable({uuid, name, iconUrl, symbol, marketCap, price, change}) {
+ 
   return (
     <div key={uuid} className='basictable'>
         <div className='basictable__div'>

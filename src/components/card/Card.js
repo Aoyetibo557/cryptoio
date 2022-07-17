@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import BasicSparklines from '../sparklines/BasicSparklines';
 import './Card.css';
 import {Link} from 'react-router-dom'; 
+import { Skeleton } from '@mui/material';
 
 function Card({uuid, size, name, iconUrl, price, btcPrice,symbol, sparklines, change, color, orientation}) {
-  return (
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 2000);
+        return () => clearTimeout(timer);
+    }, [loading]);
+  return loading === false ? (
     <Link to={`/markets/${name}/${uuid}`} key={uuid} className={`card card-${size} card-${orientation}`}>
         <div className='card__header'>
             <h3 className='card__name'>{name}</h3>
@@ -25,8 +34,10 @@ function Card({uuid, size, name, iconUrl, price, btcPrice,symbol, sparklines, ch
                 isSpots={true}
             />
         </div>
+
+        
     </Link>
-  )
+  ): <Skeleton className='card__skeleton' variant="rectangular" width={210} height={118} />
 }
 
 export default Card

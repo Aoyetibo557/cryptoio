@@ -7,18 +7,23 @@ import CoinChart from '../charts/CoinChart';
 import LoginCard from '../card/LoginCard';
 import CoinCard from '../card/CoinCard';
 import Logo from '../../assets/nobgLogo.png';
-
+import { Skeleton } from '@material-ui/lab';
 
 
 function CoinDetails({coinName, uuid}) {
   const [coinDetails, setCoindetails] = useState({});
   const [coins, setCoins] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    
     getSingleCoin(uuid).then(data => {
+      setLoading(true)
       setCoindetails(data);
+      setLoading(false)
     });
-    getCoinsWithoutThisCoin();
+      getCoinsWithoutThisCoin();
+
     
   }, [uuid, coinDetails.price, coinDetails.change]);
 
@@ -69,6 +74,7 @@ function CoinDetails({coinName, uuid}) {
 
           <div className='coindetails__content__container'>
             <CoinChart coin={coinDetails} />
+      
             <div>
               <LoginCard coinSymbol={coinDetails.symbol} />
               <div className='coindetails__content__topdiv-assets'>

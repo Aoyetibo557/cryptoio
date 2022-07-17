@@ -15,7 +15,7 @@ function NotFound() {
           <div className='notfound__right'>
             <h5>Page not found</h5>
             <h2>Oh No! Error 404</h2>
-            <h4>It seems this page has been abducted by aliens. <br />Come back to the homepage while we try and rescue it</h4>
+            <h4>It seems this page has been abducted by <span className='keyword'>aliens</span>. <br />Come back to the homepage while we try and rescue it</h4>
             
             <div>
               <Button color="primary" label='Back to Homepage' />

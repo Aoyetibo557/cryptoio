@@ -2,12 +2,16 @@ import React, {useState, useEffect} from 'react'
 import { getCoins } from '../../utils/getters';
 import BasicTable from '../basictable/BasicTable';
 
+
 function MarketTable() {
     const [filteredData, setFilteredData] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         getCoins().then(data => {
+            setLoading(true)
             setFilteredData(data);
+            setLoading(false)
         }).catch(err => console.error(err));
     }, []);
 
@@ -28,6 +32,7 @@ function MarketTable() {
 
 
         <div className='markettable__content'>
+
             {filteredData && filteredData.map(coin => (
                 <BasicTable key={coin.uuid} 
                     uuid={coin.uuid}
