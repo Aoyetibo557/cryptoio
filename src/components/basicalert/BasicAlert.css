@@ -70,3 +70,13 @@
     opacity: 1;
   }
 }
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+  }
+}

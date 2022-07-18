@@ -21,7 +21,7 @@ function RegisterPage() {
                             name="firstName"
                             type='text'
                             size='small'
-                            placeholder='First name'
+                            label={'First Name'} 
                         />
 
                         <BasicInput
@@ -29,7 +29,7 @@ function RegisterPage() {
                             name="lastName"
                             type='text'
                             size='small'
-                            placeholder='Last name'
+                            label={'Last Name'}
                         />
                    </div>
 
@@ -39,7 +39,7 @@ function RegisterPage() {
                             name="email"
                             type='text'
                             size='large'
-                            placeholder='Enter your email'
+                            label={'Email'}
                         />
                    </div>
 
@@ -49,7 +49,7 @@ function RegisterPage() {
                             name="dob"
                             type='date'
                             size='small'
-                            placeholder='Enter your Date of birth'
+                            label={'Date of Birth'}
                         />
                    </div>
 

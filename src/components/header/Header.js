@@ -27,7 +27,7 @@ function Header() {
               <Link to='/' className='header__nav-link'>Home</Link>
               <Link to='/mobile-app' className='header__nav-link'>Mobile app</Link>
               <Link to='/markets' className='header__nav-link'>Markets</Link>
-              <Link to='/' className='header__nav-link'>Blogs</Link>
+              {/* <Link to='/' className='header__nav-link'>Blogs</Link> */}
             </div>
 
             <div className='header__nav-div-right'>

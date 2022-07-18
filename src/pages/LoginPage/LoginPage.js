@@ -110,7 +110,6 @@ function LoginPage() {
                         label='Password'
                         onChange={passwordValidation}
                         errMsg={pwdErrMsg}
-
                         isError={isPwdError}
                     />
 
