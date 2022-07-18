@@ -17,7 +17,7 @@ function BasicInput({label, color, name, value, type, size, placeholder,  onChan
         />
         <label className="label" htmlFor={label}>{label}</label>
         {isError && (
-          <p className='errMsg'>{errMsg}</p>
+          <p className='errMsg'>{value.length > 0 ? errMsg : ""}</p>
         )}
 
     </div>
