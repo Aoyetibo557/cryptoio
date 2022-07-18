@@ -4,6 +4,7 @@ import BasicSparklines from '../sparklines/BasicSparklines';
 import './Table.css';
 import {Link} from 'react-router-dom';
 import {getCoins} from '../../utils/getters';
+import CoinCard from '../card/CoinCard';
 
 function Table() {
 
@@ -70,10 +71,36 @@ function Table() {
                     )).slice(0, 7)}
                 </tbody>
             </table>
-            <div className='table__link__container'>
+       </div>
+        
+        
+        {/*responsive table  */}
+       <div className='responsive__table'>
+        { data && data?.map(coin => (
+            <div className='responsive__table__content'>
+                
+                <div className='responsive__table__top'>
+                    <div>
+                        <img className='table__image' src={coin.iconUrl} alt={coin.name} />
+                    </div>
+                    <div>
+                        <h4>{coin.name}</h4>
+                        <span>{coin.symbol}</span>
+                    </div>
+                </div>
+                <div className='responsive__table__sparklines'>
+                    <BasicSparklines limit={12} color={coin.color} data={coin.sparkline} />
+                </div>
+                <div className='responsive__table__content__price'>
+                    <span>${convertPrice(coin?.price)}</span>
+                    <span className={coin.change >= 0.0 ? 'coin__td-change-positive' : "coin__td-change-negative" }>{coin.change}%</span>
+                </div>
+            </div>
+        )).slice(0, 5)}
+       </div>
+       <div className='table__link__container'>
                 <Link to='/markets'>Explore all other available assets &rarr;</Link>
             </div>
-       </div>
     </div>
   )
 }

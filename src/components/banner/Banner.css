@@ -45,3 +45,53 @@
     height: 400px;
     object-fit: contain;
 }
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        display: flex;
+        height: 100%;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .banner__content {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner__content__text {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .banner__title {
+        font-size: 1.8rem;
+    }
+
+    .banner__title-first {
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+
+    .banner__title-second {
+        font-weight: bold;
+        color: #00E6F6;
+    }
+
+    .banner__subtitle {
+        margin-top: 30px;
+        font-weight: 300;
+        font-size: 1.1rem;
+        color: #FFFFFF;
+    }
+
+
+
+    .banner__content__image {
+        width: 100%;
+        height: 100%;
+    }
+}
