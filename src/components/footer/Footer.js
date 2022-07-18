@@ -43,7 +43,7 @@ function Footer() {
             </div>
             <div className='footer__content-right'>
                 <div>
-                    <img src={FooterLogo} alt=""/>
+                    <img className='footer__image' src={FooterLogo} alt=""/>
                 </div>
             </div>
         </div>
