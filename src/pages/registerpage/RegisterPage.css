@@ -41,3 +41,9 @@
 .register__form div {
     display: flex;
 }
+
+@media only screen and (max-width: 768px) {
+    .register__form div {
+        flex-direction: column;
+    }
+}

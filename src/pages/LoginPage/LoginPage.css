@@ -86,3 +86,34 @@
 .login__btn-active {
     opacity: 1;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .login__top h3 {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .login__top p {
+        font-size: 1rem;
+    }
+
+    .login__form {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    
+
+
+    .login__bottom p {
+        font-size: 10px;
+    }
+
+    .login__btn {
+        width: 75%;
+        height: 40px;
+        font-size: 14px;
+    }
+}

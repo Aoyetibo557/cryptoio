@@ -64,3 +64,19 @@ input::placeholder{
     font-weight: 300;
     color: #00E6F6;
 }
+
+@media only screen and (max-width: 768px) {
+    .input__large {
+        width: 75vw;
+        font-size: 16px;
+        padding: 0 10px;
+        color: #fff !important;
+    }
+
+    .input__small {
+        width: 75vw;
+        font-size: 14px;
+        padding: 0 10px;
+        color: #fff !important;
+    }
+}
