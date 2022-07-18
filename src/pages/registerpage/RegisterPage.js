@@ -1,7 +1,7 @@
 import React from 'react';
 import "./RegisterPage.css";
 import { Link } from 'react-router-dom';
-import BasicInput from '../../components/BasicInput'
+import BasicInput from '../../components/basicinput/BasicInput'
 import Header from '../../components/header/Header'
 
 function RegisterPage() {

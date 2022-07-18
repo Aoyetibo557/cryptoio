@@ -1,0 +1,72 @@
+
+.basicalert {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+    height: 50px;
+    padding: 7px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #00E6F6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: fixed;
+    left: 65%;
+    animation: fadeInRight 0.99s ease-in-out;
+}
+
+.delete {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    opacity: 0.7;
+  
+}
+
+.delete__icon {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.alert__info {
+    background-color: #5a77d5;
+}
+
+.alert__error {
+    background-color: #ff0000;
+}
+
+.alert__msg {
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.delete:hover {
+    transform: scale(0.90);
+    opacity: 1;
+}
+
+.closedAlert {
+    display: none;
+}
+
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
