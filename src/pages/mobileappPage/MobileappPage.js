@@ -25,7 +25,7 @@ function MobileappPage() {
         <div className='mobileappPage__content'>
             <div className='mobileappPage__top'>
                 <div className='mobileappPage__top-left'>
-                    <h3>Get access to cyrpto on the go with the Cryptoio app </h3>
+                    <h3>Get access to cyrpto on the go with the Cryptoio app. </h3>
                     <p>The full trading functionality of Cryptoio at your fingertips whenever the action hits.</p>
 
                    <div>
@@ -44,7 +44,7 @@ function MobileappPage() {
 
             <section className='mobileappPage__section'>
                 <div className='mobileappPage__topbody'>
-                    <div className='mobileappPage__topbody__box'>
+                    <div className='mobileappPage__topbody__box box__one'>
                         <div>
                             <h3>Intuitive interface</h3>
                             <hr />
@@ -56,7 +56,7 @@ function MobileappPage() {
                         <img src={Interface} alt="finalcial data" className='mobileappPage__smallimage backdrop'/>
                     </div>
 
-                    <div className='mobileappPage__topbody__box'>
+                    <div className='mobileappPage__topbody__box box__two'>
                         <img src={ExchangeImage} alt="finalcial data" className='mobileappPage__smallimage backdrop'/>
 
                         <div>
@@ -69,7 +69,7 @@ function MobileappPage() {
 
                     </div>
 
-                    <div className='mobileappPage__topbody__box'>
+                    <div className='mobileappPage__topbody__box box__three'>
                         <div>
                             <h3>Secure crypto transfers</h3>
                             <hr />
