@@ -34,7 +34,7 @@ const getCoins = async () => {
     return await fetch(url, options)
         .then(res => res.json())
         .then(json => {
-            console.log(json.data.coins);
+            // console.log(json.data.coins);
             return json.data.coins
         })
         .catch(err => console.error('error:' + err));
@@ -85,7 +85,7 @@ const getSingleCoin = async (uuid) => {
     return await fetch(url, options)
         .then(res => res.json())
         .then(json => {
-            console.log(json.data.coin);
+            // console.log(json.data.coin);
             return json.data.coin
         })
         .catch(err => console.error('error:' + err));

@@ -70,3 +70,36 @@
     background-color: #fff;
     border-radius: 10px;
 }
+
+.responsiveList {
+    display: none;
+}
+
+.markettable__content__responsive {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .marketcomp {
+        flex-direction: column;
+        width: 100%;
+    }
+    .marketcomp-div {
+        display: none;
+    }
+
+    .markettable__content {
+        padding: 10px;
+        background-color: transparent;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .markettable__content__topdiv {
+        display: none;
+    }
+
+    .markettable__content__responsive{
+        width: 100%;
+      
+    }
+}

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import "./MarketComp.css";
 import { getCoins, getBestCoin, getWorstCoin, getLastCoin, getHighestMarketCap } from '../../utils/getters';
 import Card from '../card/Card';
+import ResponsiveMarketList from './ResponsiveMarketList';
 
 function MarketComp() {
     const [data, setData] = useState([]);
@@ -118,6 +119,10 @@ function MarketComp() {
                     />
                 )).slice(0,3)}
             </div>
+        </div>
+
+        <div className='responsiveList'>
+            <ResponsiveMarketList bestCoins={bestCoins} highestMarketCap={highestMarketCap} worstCoins={worstCoins} lastCoins={lastCoins} />
         </div>
     </div>
   )

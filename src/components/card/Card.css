@@ -170,3 +170,62 @@
     color: #FFFFFF;
     opacity: 0.6;
 }
+
+
+@media only screen and (max-width: 768px) {
+   
+    .card {
+        width: 100%;
+    }
+
+        
+    .card-small {
+        width: 1000%;
+        height: 180px;
+    }
+
+    .card__name {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #000;
+        opacity: 0.9;
+    }
+
+    .card__image {
+        width: 22px;
+        height: 22px;
+        background-size: contain;
+    }
+
+
+    .card-change-positive {
+        color: green;
+        font-size: 14px;
+    }
+
+    .card-change-negative {
+        color: red;
+        font-size: 14px;
+
+    }
+
+    .coinCard {
+        width: 100%;
+    }
+
+    .coinCard__left{
+       margin-left: 10px;
+    }
+
+    .coinCard__right{
+        margin-right: 10px;
+    }
+
+    .coinCard__image {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    
+}

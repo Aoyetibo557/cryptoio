@@ -1,0 +1,38 @@
+@media only screen and (max-width: 768px) {
+   .responsiveList {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .responsiveList__btn__container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .responsiveList__btn {
+        width: 120px;
+        font-size: 12px;
+        font-weight: 400;
+        background-color: #ddd;
+        border: none;
+        padding: 7px;
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .responsiveList__cards {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+}

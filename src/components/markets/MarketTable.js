@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { getCoins } from '../../utils/getters';
 import BasicTable from '../basictable/BasicTable';
+import CoinCard from '../card/CoinCard';
 
 
 function MarketTable() {
@@ -32,18 +33,28 @@ function MarketTable() {
 
 
         <div className='markettable__content'>
+            <div className='markettable__content__topdiv'>
+                {filteredData && filteredData.map(coin => (
+                    <BasicTable key={coin.uuid} 
+                        uuid={coin.uuid}
+                        name={coin.name}
+                        iconUrl={coin.iconUrl}
+                        symbol={coin.symbol}
+                        marketCap={coin.marketCap}
+                        price={coin.price}
+                        change={coin.change}
+                    />
+                ))}
+            </div>
 
-            {filteredData && filteredData.map(coin => (
-                <BasicTable key={coin.uuid} 
-                    uuid={coin.uuid}
-                    name={coin.name}
-                    iconUrl={coin.iconUrl}
-                    symbol={coin.symbol}
-                    marketCap={coin.marketCap}
-                    price={coin.price}
-                    change={coin.change}
-            />
-            ))}
+            <div markettable__content__responsive>
+                {loading && <div>Loading...</div>}
+                {filteredData && filteredData.map(coin => (
+                    <CoinCard key={coin.uuid} 
+                       coin={coin}
+                    />
+                ))}
+            </div>
         </div>
     </div>
   )
