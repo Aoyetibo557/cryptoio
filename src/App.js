@@ -20,7 +20,6 @@ function App() {
           <Route path="/markets/:coinName/:uuid" element={<CoinPage />} />
           <Route path="/mobile-app" element={<MobileappPage />} />
           <Route path="*" element={<NotFound />} />
-
         </Routes>
       </Router>
     </div>
