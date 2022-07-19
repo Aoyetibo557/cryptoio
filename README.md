@@ -1,3 +1,12 @@
+# Project Description
+
+This project uses an external API to display information about some of the cryptocurrency out there.
+The Project is hosted on vercel and is mobile responsive. There are further updates to this application. but you can check out the current version through the link below.
+
+### `Live Site`
+
+[Cryptoio.com](https://cryptoio.vercel.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
