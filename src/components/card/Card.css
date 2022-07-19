@@ -175,17 +175,22 @@
 @media only screen and (max-width: 768px) {
    
     .card {
+       
+        margin-bottom: 0px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding:10px;
         width: 100%;
+        height: 250px;
     }
-
         
     .card-small {
-        width: 1000%;
-        height: 180px;
+        width: 100% !important;
+        height: 150px;
     }
 
     .card__name {
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 600;
         color: #000;
         opacity: 0.9;

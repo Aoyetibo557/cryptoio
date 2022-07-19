@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { getCoins } from '../../utils/getters';
+import BasicAlert from '../basicalert/BasicAlert';
 import BasicTable from '../basictable/BasicTable';
 import CoinCard from '../card/CoinCard';
 
@@ -49,6 +50,12 @@ function MarketTable() {
 
             <div markettable__content__responsive>
                 {loading && <div>Loading...</div>}
+                {filteredData.length <= 0 &&
+                    <div>
+                        <h4>No results found!</h4> 
+                        <BasicAlert message="No data found" type="info" /> 
+                    </div>
+                }
                 {filteredData && filteredData.map(coin => (
                     <CoinCard key={coin.uuid} 
                        coin={coin}

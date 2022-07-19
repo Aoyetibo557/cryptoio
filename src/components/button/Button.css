@@ -41,3 +41,26 @@
 .button-secondary:hover{
     opacity: 1;
 }
+
+@media only screen and (max-width: 768px) {
+    
+    .button{
+       
+        margin-top: 30px;
+        margin-bottom: 40px;
+        width: 170px;
+        font-size: 15px;
+        opacity: 1;
+        border: none;
+        outline: none;
+    }
+
+    .button-secondary{
+        width: 180px;
+        margin-bottom: 0px;
+        background-color: red;
+        opacity: 1;
+        height: 50px;
+        color: #fff;
+    }
+}

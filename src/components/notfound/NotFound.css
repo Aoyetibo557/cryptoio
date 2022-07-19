@@ -48,11 +48,11 @@
 }
 
 .notfound__right div {
-    width: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .notfound__link {
@@ -102,3 +102,32 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+    .notfound__content{
+      flex-direction: column;
+    }
+    .notfound__image{
+      width: 70%;
+      height: auto;
+    }
+    .notfound__right{
+      width: 90%;
+    }
+
+    .notfound__right h5 {
+      width: 100px;
+      padding: 7px;
+      font-size: 12px;
+        
+    }
+    .notfound__right h2{
+      font-size: 2.1rem;
+    }
+    .notfound__right h4{
+      font-size: 1rem;
+    }
+
+    .notfound__right div{
+      width: 100%;
+    }
+}

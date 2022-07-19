@@ -13,6 +13,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
     position: fixed;
+    top: 100px;
     left: 65%;
     animation: fadeInRight 0.99s ease-in-out;
 }

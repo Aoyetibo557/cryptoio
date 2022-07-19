@@ -5,29 +5,40 @@ import Card from '../card/Card';
 function ResponsiveMarketList({bestCoins, worstCoins, lastCoins, highestMarketCap}) {
     const [coinType, setCoinType] = useState('Best Performers');
     const [coinList, setCoinList] = useState(bestCoins);
-
+    const [loading, setLoading] = useState(false);
 
     const handleCoinData = (coinType) => {
         coinType.preventDefault();
         let dataType = coinType.target.value;
         if(dataType === 'Best Performers') {
+            setLoading(true);
             setCoinType("Best Performers");
             setCoinList(bestCoins);
+            setLoading(false);
+            
         }else if(dataType === 'Worst Performers') {
+            setLoading(true);
             setCoinType("Worst Performers");
             setCoinList(worstCoins);
+            setLoading(false);
         }else if(dataType === 'Last Coins') {
+            setLoading(true);
             setCoinType("Last Coins");
             setCoinList(lastCoins);
+            setLoading(false);
         }else if(dataType === 'Highest MarketCap') {
+            setLoading(true);
             setCoinType("Highest MarketCap");
             setCoinList(highestMarketCap);
+            setLoading(false);
         }
     }
 
 
     useEffect(() => {
+        setLoading(true);
         setCoinList(bestCoins);
+        setLoading(false);
     }, [bestCoins]);
   return (
     <div className='responsiveList'>
@@ -38,11 +49,13 @@ function ResponsiveMarketList({bestCoins, worstCoins, lastCoins, highestMarketCa
        </div>
 
        <div className='responsiveList__cards'>
+            {loading && <div className='responsiveList__loading'>Loading...</div>}
               {coinList && coinList.map(coin => (
                     <Card 
                         key={coin.uuid}
                         uuid={coin.uuid}
-                        size='small'
+                        size= "small"
+                        orientation= "vertical"
                         name={coin.name}
                         iconUrl={coin.iconUrl}
                         price={coin.price}

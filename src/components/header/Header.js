@@ -24,7 +24,7 @@ function Header() {
     // alert(urlPath);
   }, [url]);
   return (
-    <header className='header'>
+      <header className='header'>
         <Link to='/'>
             <img src={HeaderLogo} alt="logo" className='header__logo'/>
         </Link>

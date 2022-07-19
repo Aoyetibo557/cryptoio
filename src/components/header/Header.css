@@ -98,7 +98,7 @@
     .header__icon{
         font-size: 3rem;
         color: #FFFFFF;
-        margin-right: 30px;
+        margin-right: 10px;
         opacity: 0.7;
     }
 
@@ -107,11 +107,14 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        height: 100px;
+        width: 100%;
     }
 
     .header__logo {
-        width: 200px;
-        height: 50px;
+        width: 250px;
+        height: 90px;
+        object-fit: cover;
     }
 
     .header__nav-home {
@@ -119,7 +122,7 @@
         flex-direction: column;
         background-color: #072431;
         position: fixed;
-        top: 4rem;
+        top: 5rem;
         left:100%;
         height: 55vh;
         z-index: 1;
