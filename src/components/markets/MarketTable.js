@@ -48,7 +48,7 @@ function MarketTable() {
                 ))}
             </div>
 
-            <div markettable__content__responsive>
+            <div className="markettable__content__responsive" >
                 {loading && <div>Loading...</div>}
                 {filteredData.length <= 0 &&
                     <div>
