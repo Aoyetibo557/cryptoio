@@ -232,5 +232,38 @@
         object-fit: contain;
     }
 
+    /*  Login Card Responsive Styles*/
+        
+    .loginCard{
+        width: 92%;
+        height: 40vh;
+        padding: 0px;
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+
+
+    .loginCard__tab {
+        width: 50%;
+        background-color: #0f3749;
+        color: #FFFFFF !important;
+    }
+
+    .loginCard__tabpanel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .loginCard____tabpanel__link{
+        font-size: 1rem;
+        font-weight: 400;
+        color: #FFFFFF;
+        text-decoration: none;
+        color: #00E6F6;
+    }
+
     
 }

@@ -39,3 +39,12 @@
         opacity: 1;
     }
 }
+
+
+@media only screen and (max-width: 768px) {
+    .coinchart {
+        width: 87%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+}

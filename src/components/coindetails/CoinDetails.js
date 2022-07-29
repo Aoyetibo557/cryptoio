@@ -148,8 +148,6 @@ function CoinDetails({coinName, uuid}) {
                 </div>
               </div>
 
-                
-
             </div>
 
 

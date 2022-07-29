@@ -215,3 +215,43 @@
 .coindetails__content__bottomdiv-stats-item div a:hover {
     color: #00e6f6;
 }
+
+@media only screen and (max-width: 768px) {
+    .coindetails__content__topdiv-assets{
+        display: none;
+        margin: 0px;
+    }
+
+    .coindetails__content__bottomdiv-descp {
+        width: 95%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .coindetails__content__bottomdiv-stats {
+        width: 96%;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+    .coindetails__content__container {
+        grid-template-columns: auto;
+    }
+
+    .coindetails__content__bottomdiv {
+        flex-direction: column;
+    }
+
+    .coindetails__content {
+        height: 100%;
+    }
+
+    .coindetails__content__bottomdiv-descp div {
+        margin-bottom: 10px;
+        position: relative;
+        top: 0px;
+        z-index: 0;
+        background: transparent;
+    }
+   
+}
